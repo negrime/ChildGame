@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: Blue
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: ada1852d5ee46b34ea366769c8229696, type: 3}
-  Color: 4
+  Color: 3

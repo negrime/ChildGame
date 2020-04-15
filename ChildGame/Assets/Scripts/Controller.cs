@@ -42,6 +42,15 @@ public class Controller : MonoBehaviour
         GenerateQuestion();
     }
 
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.R))
+        {
+            GenerateQuestion();
+        }
+    }
+
     private void GenerateQuestion()
     {
         _currentAnswerNumber++;
@@ -65,7 +74,6 @@ public class Controller : MonoBehaviour
     private void GenerateAnswers()
     {
         var addedQuestions = new LinkedList<Card>();
-        int answerIndex = Random.Range(0, _answers.Length);
         
         foreach (var currentAnswer in _answers)
         {
@@ -74,6 +82,7 @@ public class Controller : MonoBehaviour
             {
                 generateAnswer = _answersOptions[Random.Range(0, _answersOptions.Length)];
             }
+            
             currentAnswer.SetCard(generateAnswer);
             addedQuestions.AddLast(generateAnswer);
         }
@@ -87,8 +96,11 @@ public class Controller : MonoBehaviour
         }
 
         _isChosen = true;
-        if (_question.GetCard().Color == answer.GetCard().Color)
+        var qcolor = _question.GetCard().Color;
+        var acolor = answer.GetCard().Color;
+        if (qcolor == acolor)
         {
+            Debug.Log(_question.GetCard().Color);Debug.Log(answer.GetCard().Color);
             _correctAnswersCount++;
         } 
         StartCoroutine(ShowText(_question.GetCard().Color == answer.GetCard().Color));

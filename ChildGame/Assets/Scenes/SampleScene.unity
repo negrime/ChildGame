@@ -838,6 +838,11 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 397934c29a577cf449dea3177755864f, type: 2}
   - {fileID: 11400000, guid: 49c295c6a1d212c4b9dd70ba43607b06, type: 2}
   - {fileID: 11400000, guid: 92228eeaf52a3664d92a23dbee632ddf, type: 2}
+  - {fileID: 11400000, guid: f413fbd642675b6479a075fe6215aa18, type: 2}
+  - {fileID: 11400000, guid: c60cf0aa0cdd8dd40ba21fcdc78159f6, type: 2}
+  - {fileID: 11400000, guid: 1ad97dfe8dff7dd40a001de0f3940b5e, type: 2}
+  - {fileID: 11400000, guid: accf824acd8494b4d98bacf519c4ebb8, type: 2}
+  - {fileID: 11400000, guid: 2694d66f52f596340a30508f71087ca5, type: 2}
   _answersOptions:
   - {fileID: 11400000, guid: 6066fb01f5c159345ae57eef3c517d32, type: 2}
   - {fileID: 11400000, guid: 39e3a4273ac9a6e46a997dd52dc74a97, type: 2}
@@ -848,7 +853,7 @@ MonoBehaviour:
   - {fileID: 358596954}
   - {fileID: 577345742}
   - {fileID: 2013520951}
-  _answersAmount: 4
+  _answersAmount: 40
   _correctAnswersCount: 0
 --- !u!4 &1149422618
 Transform:
@@ -1168,7 +1173,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2034072466
 RectTransform:
   m_ObjectHideFlags: 0

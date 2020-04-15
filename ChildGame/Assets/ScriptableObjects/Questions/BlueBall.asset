@@ -13,4 +13,4 @@ MonoBehaviour:
   m_Name: BlueBall
   m_EditorClassIdentifier: 
   Sprite: {fileID: 21300000, guid: 666f0c2aa893ee64f922a1cc1fd5eba6, type: 3}
-  Color: 4
+  Color: 3
